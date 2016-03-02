@@ -1,0 +1,112 @@
+body {
+    margin:0;
+}
+
+p, h1, li, a, label {
+    font-family:sans-serif;
+    color:white;
+}
+
+/* Stuff for navbar */
+#nav {
+    position:fixed;
+    z-index:9;
+    width:100%;
+}
+
+#nav > ul {
+    margin:auto;
+    padding:0px;
+    list-style-type: none;
+    text-align:center;
+}
+
+#nav ul li {
+    display:inline-block;
+}
+
+.middle {
+    padding:1em;
+}
+
+.middle a {
+    padding: 1em;
+}
+
+.middle a:hover {
+    background-color:#515152;
+}
+
+#nav * {
+    font-weight: bold;
+    text-decoration: none;
+}
+#logo {
+    float:left;
+}
+#logo a {
+    float:left;
+    font-family: "Lily Script One", cursive;
+    font-size:2em;
+    padding:.5em;
+}
+
+#buynow {
+    float:right;
+    padding:2em;
+}
+
+#buynow a {
+    background-color:#2EA029;
+    font-weight: bold;
+    font-size:1em;
+    padding:.6em;
+    width:5em;
+    margin-top:.9em;
+}
+
+#buynow a:hover {
+    background-color:#2ED429;
+}
+
+/* Stuff for main page content */
+.section {
+    font-size:6em;
+    text-align: center;
+    color:white;
+}
+
+#section0 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#c98383), to(#7baabe));
+    background: -webkit-linear-gradient(#C98383, #7BAABE);
+    background: linear-gradient(#C98383,#7BAABE);
+}
+
+#section1 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+    background: -webkit-linear-gradient(#7BAABE, #969AC6);
+    background: linear-gradient(#7BAABE,#969AC6);
+}
+
+#section2 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+    background: -webkit-linear-gradient(#969AC6, #636F8F);
+    background: linear-gradient(#969AC6,#636F8F);
+}
+
+#content {
+    height:5em;
+    padding-bottom:1.55em;
+}
+
+/* Stuff for footer */
+#footer {
+    background-color:#1C1C1C;
+    text-align: center;
+    font-size:1.5em;
+}
+
+/* Responsive stuff */
+@media screen and (max-width: 800px) {    
+
+}
