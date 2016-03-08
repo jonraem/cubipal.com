@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cubipal - Home</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Joni Rämö">
+        <meta name="description" content="Making things easier.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Linked content -->
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lily+Script+One|Droid+Sans|Lato">
+        <link type="text/css" rel="stylesheet" href="css/jquery.fullpage.min.css">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Navigation bar for the page -->
+        <nav>
+            <ul id="top">
+                <li id="logo"><a href="#fullpage">Cubipal</a></li>
+                <li class="middle"><a href="#product">Our product</a></li>
+                <li class="middle"><a href="#about">About us</a></li>
+                <li class="middle"><a href="#contact">Contact</a></li>
+                <li id="buynow"><a href="#" onclick="return false;">BUY NOW</a></li>
+            </ul>
+        </nav>
+        <!-- Section for fullpage.js stuff -->
+        <div id="fullpage">
+            <div class="section" id="section0"></div>
+        </div>
+        <!-- Main content of the page -->
+        <div class="wrapper">
+            <section id="product">
+                <h1>Our product</h1>
+                <p>
+                    We are Cubipal, the creators of the inexpensive learning and prototyping platform. Our dream is to give people the possibility to learn programming and electronics without hassle and spending lots of money.
+                </p>
+                <p>
+                    If you want to learn programming and embedded electronics, you would normally have to figure out which components to buy, how they work together and then assemble it all by yourself. Not to mention you would have to spend a ton of money on the components! With Cubipal all of these things are thought out for you. The device contains all the sensors you need so you can start testing it out right away. And Cubipal won't break your bank!
+                </p>
+                <p>
+                    Some similar embedded prototyping platforms offer you many of the same things but they often cost hundreds of dollars. We have designed Cubipal to be an easy and inexpensive springboard to your learning!
+                </p>
+            </section>
+            <section id="about">
+                <h1>About us</h1>
+                <p>
+                    We are currently a team of six from the beautiful Finnish city of Turku. Four of us are attending the NY StartUp! course that is being organized by the Turku School of Economics.
+                </p>
+                <div class="whitespace"></div>
+                <div id="names">
+                    <ul>
+                        <li><span class="member-name">Sami</span> Project Management</li>
+                        <li><span class="member-name">Joni</span> Web/Software</li>
+                        <li><span class="member-name">Matti</span> Graphics/Software</li>
+                        <li><span class="member-name">Stella</span> Social Media</li>
+                        <li><span class="member-name">Teppo</span> Marketing</li>
+                        <li><span class="member-name">Tuukka</span> Hardware</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+                <p>
+                    You can contact any one of us at [name]@cubipal.com.
+                </p>
+                <p>
+                    We can't wait to hear from you!
+                </p>
+            </section>
+            <!-- This div adds 2em of whitespace -->
+            <div class="whitespace"></div>
+            <!-- This div pushes the footer to the bottom of the viewport -->
+            <div class="push"></div>
+        </div>
+        <!-- Footer of the page -->
+        <footer>
+            <p>© 2016 Cubipal | Made with ♥ in Turku</p>
+        </footer>
+        <!-- Scripts -->
+         <script src="js/jquery.min.js"></script>
+         <script src="js/jquery.fullpage.min.js"></script>
+         <script>
+             $(document).ready(function() {
+                $("#fullpage").fullpage({
+                    autoScrolling: false,
+                    fitToSection: false
+                });
+             });
+         </script>
+         <script> // This script performs a smooth scroll to an anchor
+             $(function() {
+             $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);
+                        return false;
+                    }
+                }
+              });
+            });
+         </script>
+    </body>
+</html>

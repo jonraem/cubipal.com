@@ -1,0 +1,238 @@
+/* Document wide styling */
+html, body {
+  height:100%;
+}
+
+body {
+    margin:0;
+}
+
+p, h1, li, a, label {
+  font-family:sans-serif;
+  color:white;
+}
+
+.whitespace {
+  height:2em;
+}
+
+@keyframes rainbow {
+    0%    {color:white;}
+    20%   {color:dodgerblue;}
+    40%   {color:yellow;}
+    60%   {color:lightgreen;}
+    80%   {color:tomato;}
+    100%  {color:white;}
+}
+
+/* Stuff for navbar */
+nav {
+  position:fixed;
+  z-index:9;
+  width:100%;
+}
+
+nav ul {
+    margin:auto;
+    padding:0px;
+    list-style-type: none;
+    text-align:center;
+}
+
+nav ul li {
+    display:inline-block;
+}
+
+nav * {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.middle {
+    background-color: black;
+    width:8em;
+    margin-left:.25em;
+    margin-right:.25em;
+    box-shadow: 2px 2px white;
+}
+
+.middle a {
+  display:block;
+  padding:1em;
+}
+
+.middle a:hover {
+  animation-name:rainbow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#logo {
+    float:left;
+}
+
+#logo a {
+    float:left;
+    font-family: "Lily Script One", cursive;
+    font-size:3em;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    padding:.5em;
+}
+
+#buynow {
+    float:right;
+    padding:2em;
+}
+
+#buynow a {
+    background-color:#2EA029;
+    font-weight: bold;
+    font-size:1em;
+    padding:.6em;
+    width:5em;
+    margin-top:.9em;
+}
+
+#buynow a:hover {
+    background-color:#2ED429;
+}
+
+/* Stuff for main page content */
+/* Product description section */
+.section {
+    text-align: center;
+    color:white;
+    background-size:cover;
+}
+
+#section0 {
+  background-image: url("../img/CubeDraft.png");
+  background-position:center;
+}
+
+section {
+  background: -webkit-gradient(linear, top left, bottom left, from(#03121c), to(#7baabe));
+  background: -webkit-linear-gradient(#03121C, #7BAABE);
+  background: linear-gradient(#03121C,#7BAABE);
+  width:45em;
+  margin:auto;
+  padding:3em;
+  margin-top:2em;
+  min-height:100%;
+}
+section h1 {
+  font-family:"Droid Sans", sans-serif;
+  font-size:2.5em;
+  margin-bottom:1.5em;
+}
+section p {
+  font-family:"Lato", sans-serif;;
+  font-size:1.5em;
+  padding:.5em;
+  padding-left:2em;
+  text-align:justify;
+}
+
+/* About us section */
+#names ul {
+  text-decoration: none;
+  list-style-type: none;
+  width:80%;
+  margin:auto;
+}
+
+#names ul li {
+  font-size:1.1em;
+  margin:1.2em;
+  display:inline-block;
+  width:30%;
+  padding-left: 2em;
+}
+
+#names ul li:hover {
+  animation-name:rainbow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.member-name {
+  font-weight: bold;
+  font-size:1.3em;
+  display:block;
+}
+
+/* Contact section */
+#contact p {
+  text-align:left;
+}
+
+/* Stuff for footer */
+footer {
+    background-color:#1C1C1C;
+    text-align: center;
+    font-size:1.5em;
+    padding:.75em;
+}
+
+footer, push {
+  height:3em;
+}
+
+/* Responsive stuff */
+@media screen and (max-width: 1100px) {
+  #logo {
+    font-size:80%;
+  }
+
+  section {
+    width:35em;
+  }
+
+  #names ul li {
+    padding:0;
+    margin:.5em;
+    width:40%;
+  }
+
+  #names ul {
+    padding-left: 5em;
+  }
+
+  .member-name {
+    display:block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    position:relative;
+    height:5em;
+    background-color:black;
+  }
+
+  #logo {
+    font-size:70%;
+  }
+
+  .middle {
+    display:none;
+  }
+
+  section h1 {
+    font-size:2em;
+  }
+
+  section p {
+    font-size:1.4em;
+  }
+
+  section {
+    width:80%;
+  }
+
+  #names ul li{
+    display:block;
+    padding:1em;
+    width:60%;
+  }
+}
