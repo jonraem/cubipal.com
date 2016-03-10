@@ -13,15 +13,15 @@ p, h1, li, a, label {
 }
 
 .whitespace {
-  height:2em;
+  height:1.5em;
 }
 
 @keyframes rainbow {
     0%    {color:white;}
-    20%   {color:dodgerblue;}
+    20%   {color:deepskyblue;}
     40%   {color:yellow;}
-    60%   {color:lightgreen;}
-    80%   {color:tomato;}
+    60%   {color:lime;}
+    80%   {color:salmon;}
     100%  {color:white;}
 }
 
@@ -111,15 +111,22 @@ nav * {
 }
 
 section {
-  background: -webkit-gradient(linear, top left, bottom left, from(#03121c), to(#7baabe));
-  background: -webkit-linear-gradient(#03121C, #7BAABE);
-  background: linear-gradient(#03121C,#7BAABE);
+  background: -webkit-gradient(linear, top left, bottom left, from(#7e9aae), to(#03121c));
+  background: -webkit-linear-gradient(#7e9aae, #03121c);
+  background: linear-gradient(#7e9aae,#03121c);
   width:45em;
   margin:auto;
   padding:3em;
-  margin-top:2em;
+  margin-top:1.5em;
   min-height:100%;
 }
+
+#about {
+  background: -webkit-gradient(linear, top left, bottom left, from(#03121c), to(#7e9aae));
+  background: -webkit-linear-gradient(#03121C, #7e9aae);
+  background: linear-gradient(#03121C,#7e9aae);
+}
+
 section h1 {
   font-family:"Droid Sans", sans-serif;
   font-size:2.5em;
@@ -246,6 +253,13 @@ footer, push {
 @media screen and (max-width: 650px) {
   #names ul li {
     display:block;
-    padding-left:.5em;
+  }
+
+  section {
+    padding:1em;
+  }
+
+  section p {
+    padding-left:1em;
   }
 }
