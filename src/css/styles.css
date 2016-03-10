@@ -1,6 +1,7 @@
 /* Document wide styling */
 html, body {
   height:100%;
+  background-color: #F0F0F0;
 }
 
 body {
@@ -253,6 +254,7 @@ footer, push {
 @media screen and (max-width: 650px) {
   #names ul li {
     display:block;
+    width:10em;
   }
 
   section {
@@ -261,5 +263,11 @@ footer, push {
 
   section p {
     padding-left:1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #names ul {
+    padding-left:2em;
   }
 }
