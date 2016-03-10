@@ -63,7 +63,7 @@ nav * {
 
 .middle a:hover {
   animation-name:rainbow;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -151,7 +151,7 @@ section p {
 
 #names ul li:hover {
   animation-name:rainbow;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -170,8 +170,12 @@ section p {
 footer {
     background-color:#1C1C1C;
     text-align: center;
-    font-size:1.5em;
     padding:.75em;
+    font-size:1.2em;
+}
+
+footer p {
+
 }
 
 footer, push {
@@ -219,20 +223,29 @@ footer, push {
   }
 
   section h1 {
-    font-size:2em;
+    font-size:1.8em;
   }
 
   section p {
-    font-size:1.4em;
+    font-size:1.2em;
   }
 
   section {
-    width:80%;
+    width:auto;
   }
 
-  #names ul li{
+  #names ul, #names ul li {
+    margin:1em;
+  }
+
+  footer {
+    font-size:1em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #names ul li {
     display:block;
-    padding:1em;
-    width:60%;
+    padding-left:.5em;
   }
 }
