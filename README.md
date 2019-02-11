@@ -1,3 +1,7 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+THIS REPOSITORY CONTAINS CODE THAT IS NO LONGER IN USE.
+
 # cubipal.com
 Cubipal - Making things easier. http://cubipal.com
 
